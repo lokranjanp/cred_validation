@@ -15,7 +15,6 @@ This project is a software application that generates and validates numbers usin
 
 - **Programming Language**: Python
 - **Web Framework**: Flask (for web-based interface)-[if implemented
-- **Databases**: PostgreSQL (for advanced, scalable use)
 
 ## Installation
 
@@ -36,12 +35,6 @@ This project is a software application that generates and validates numbers usin
     pip install -r requirements.txt
     ```
 
-3. **Set Up Database**:
-    - For PostgreSQL:
-        - Install PostgreSQL and set up a database.
-        - Update the `DATABASE_URL` in the environment variables or configuration file with your PostgreSQL database URL.
-
-    
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
@@ -54,7 +47,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - The Luhn algorithm: [Wikipedia](https://en.wikipedia.org/wiki/Luhn_algorithm)
 - Flask: [Flask Documentation](https://flask.palletsprojects.com/)
-- PostgreSQL: [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
 ## Contact
 
