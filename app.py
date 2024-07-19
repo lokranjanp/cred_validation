@@ -16,6 +16,15 @@ def generate():
     if request.method == 'POST':
         prefix = request.form['prefix']
         length = int(request.form['length'])
+
+        if not prefix.isnumeric():
+            flash("Prefix must be numeric value")
+            return redirect(url_for('generate'))
+
+        if int(length) < 1:
+            flash("Length must be positive integer")
+            return redirect(url_for('generate'))
+
         number = generate_luhn_number(prefix, length)
         return render_template('generate.html', number=number)
     return render_template('generate.html')

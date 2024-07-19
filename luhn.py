@@ -1,4 +1,7 @@
 # luhn.py
+import random
+
+
 def digits_of(n):
     return [int(d) for d in str(n)]
 
@@ -18,7 +21,6 @@ def luhn_check(num):
 
 
 def generate_luhn_number(prefix, length):
-    import random
     num = [int(x) for x in str(prefix)]
     while len(num) < (length - 1):
         num.append(random.randint(0, 9))
