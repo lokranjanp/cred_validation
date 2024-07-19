@@ -9,31 +9,19 @@ This project is a software application that generates and validates numbers usin
 - **Number Generation**: Generate valid numbers that comply with the Luhn algorithm.
 - **Number Validation**: Validate if a given number is valid according to the Luhn algorithm.
 - **Number Type Identification**: Identify the type of generated or validated number (e.g., credit card issuer).
-- **User Interface Options**: Command-line interface (CLI)
+- **User Interface Options**: Graphical User Interface (GUI)
 
 ## Technologies Used
 
 - **Programming Language**: Python
-- **Web Framework**: Flask (for web-based interface)-[if implemented
+- **Web Framework**: Flask (for web-based interface)-
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.10
 - pip (Python package installer)
-
-### Steps
-
-1. **Clone the Repository**:
-    ```sh
-    git clone https://github.com/lokranjanp/cred_validaton.git
-    ```
-
-2. **Install Dependencies**:
-    ```sh
-    pip install -r requirements.txt
-    ```
 
 ## Contributing
 
