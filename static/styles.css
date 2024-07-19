@@ -76,3 +76,11 @@ footer {
     background-color: #d4edda;
     color: #155724;
 }
+
+#validation-result.valid {
+    color: green;
+}
+
+#validation-result.invalid {
+    color: red;
+}

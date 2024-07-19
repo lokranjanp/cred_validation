@@ -15,11 +15,27 @@
         <button type="submit">Validate</button>
     </form>
     {% if number is not none %}
-        <p>Number: {{ number }}</p>
-        <p>Is Valid: {{ 'Yes' if is_valid else 'No' }}</p>
+        <div id="validation-result" class="{{ 'valid' if is_valid else 'invalid' }}">
+            <p>Number: {{ number }}</p>
+            <p>Is Valid: {{ 'Yes' if is_valid else 'No' }}</p>
+        </div>
     {% endif %}
 {% endblock %}
 
 {% block scripts %}
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const resultDiv = document.getElementById('validation-result');
+            if (resultDiv) {
+                if (resultDiv.classList.contains('valid')) {
+                    resultDiv.style.color = 'green';
+                    resultDiv.innerHTML += '<p style="font-size: 20px;">&#10003; This number is valid!✅</p>';
+                } else {
+                    resultDiv.style.color = 'red';
+                    resultDiv.innerHTML += '<p style="font-size: 20px;">&#10007; This number is invalid!❌</p>';
+                }
+            }
+        });
+    </script>
 {% endblock %}
