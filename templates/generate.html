@@ -11,7 +11,7 @@
     {% endwith %}
     <form id="generate-form" method="post">
         <label for="prefix">Prefix:</label>
-        <input type="text" id="prefix" name="prefix" required>
+        <input type="text" id="prefix" name="prefix" required min = "1">
         <label for="length">Length:</label>
         <input type="number" id="length" name="length" required min="1">
         <button type="submit">Generate</button>
